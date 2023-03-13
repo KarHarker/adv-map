@@ -28,6 +28,7 @@ route_buffer <- st_buffer(route, 1)
 
 bc_dem <- cded(aoi=route_buffer)
 
+
 ## Save outputs ------------------------------------------------------------
 
 saveRDS(c(bc_dem, route_buffer), file='out/cropped-files.RDS')
